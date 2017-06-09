@@ -1,0 +1,21 @@
+@import 'scss/common/colors.scss';
+// Simple button
+.button{
+  position: relative;
+  padding: 0.5rem;
+  background-color: $primary-color;
+  color: complement($primary-color);
+  white-space: nowrap;
+  border: none;
+  box-shadow: 0px 2px 0 black;
+  outline: none;
+  transition: all 0.1s ease;
+  top: 0px;
+  &.active, &:active, &.selected{
+    top: 2px;
+    box-shadow: 0px 0px 0 black;
+  }
+  &:hover{
+    background-color: lighten($primary-color,5%);
+  }
+}

@@ -1,0 +1,19 @@
+@import "compass/css3/user-interface";
+@import "compass/css3/flexbox";
+
+
+#{elements-of-type(text-input)} {
+  border: none;
+  border-bottom: 1px black solid;
+}
+
+.row {
+  @include flexbox((
+    display: flex,
+    flex-direction: row
+  ));
+}
+
+webview{
+  min-height: 40em;
+}

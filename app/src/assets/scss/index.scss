@@ -1,0 +1,5 @@
+@import 'scss/common/colors.scss';
+@import 'scss/common/base.scss';
+@import 'compass/reset';
+
+@include global-reset();
